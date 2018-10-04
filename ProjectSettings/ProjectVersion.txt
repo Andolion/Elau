@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 m_EditorVersion: 2018.2.11f1
+=======
+m_EditorVersion: 2018.1.8f1
+>>>>>>> parent of 3263112... Add .gitattributes file for Git's large file storage
