@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour {
+public class BobMovement : MonoBehaviour {
 
-    public CharacterController2D control;
+    public BobCharacterControl control;
     float horizontalMove = 0;
     public float runSpeed = 40;
     bool jump = false;
