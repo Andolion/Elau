@@ -908,7 +908,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 629980526}
-  line: Let me dance motherfuckers
+  line: How do you like me now bitches? I can talk. Weehoooo! Oh my god, I should
+    stop talking.
 --- !u!4 &1402959400
 Transform:
   m_ObjectHideFlags: 0

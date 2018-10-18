@@ -27,7 +27,6 @@ public class NarratorTrigger : MonoBehaviour
     {
         if (collision.gameObject == player && !hasPlayed)
         {
-            Debug.Log("PLAYING");
             _line.play();
             hasPlayed = true;
         }
