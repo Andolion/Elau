@@ -7,7 +7,8 @@ public class BobMovement : MonoBehaviour {
     public BobCharacterControl control;
     float horizontalMove = 0;
     public float runSpeed = 40;
-    bool jump = false;
+    public bool jumpEnabled = true;
+    private bool jump = false;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +20,7 @@ public class BobMovement : MonoBehaviour {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && jumpEnabled)
         {
             jump = true;
         }
