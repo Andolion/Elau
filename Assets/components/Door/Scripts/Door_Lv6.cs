@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour {
-    public ClockControl clock;
+public class Door_Lv6 : MonoBehaviour {
+    public ClosetControl closet;
     public Sprite doorOpen;
     public Sprite doorClosed;
     SpriteRenderer renderDoor;
@@ -17,7 +17,7 @@ public class Door : MonoBehaviour {
 
     void Update()
     {
-        if (clock.doorUnlock)
+        if (closet.doorUnlock)
         {
             renderDoor.sprite = doorOpen;
         }
@@ -25,7 +25,7 @@ public class Door : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (clock.doorUnlock)
+        if (closet.doorUnlock)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
