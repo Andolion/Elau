@@ -2,7 +2,7 @@
 
 public class Line
 {
-    private AudioSource _audio = new AudioSource();
+    private AudioSource _audio;
     private string _line;
 
     public Line(string line)
@@ -10,10 +10,9 @@ public class Line
         _line = line;
     }
 
-    public void registerAudio(AudioClip audio)
+    public void registerAudio(AudioSource audio)
     {
-        _audio.clip = audio;
-        this.play();
+        _audio = audio;
     }
 
     public void play()
