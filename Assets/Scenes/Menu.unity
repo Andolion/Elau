@@ -1576,7 +1576,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 164346123}
-        m_MethodName: PlayGame
+        m_MethodName: ContiueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
