@@ -10,11 +10,6 @@ public class BobMovement : MonoBehaviour {
     public bool jumpEnabled = true;
     private bool jump = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update () {
 

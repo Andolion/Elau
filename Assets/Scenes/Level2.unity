@@ -466,6 +466,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 54932a61a14892a45af29e381faa73bd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &833244193 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1964353724595868, guid: af82685d9a0a446449629290c5ced966,
+    type: 2}
+  m_PrefabInternal: {fileID: 873272404}
+--- !u!114 &833244194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833244193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ba07637425a8c4782179ea1047ec6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorUnlock: 1
 --- !u!1001 &873272404
 Prefab:
   m_ObjectHideFlags: 0
@@ -538,6 +555,72 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af82685d9a0a446449629290c5ced966, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &993477010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 993477013}
+  - component: {fileID: 993477012}
+  - component: {fileID: 993477011}
+  m_Layer: 0
+  m_Name: Trigger To Next Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &993477011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993477010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e23e37c2d7a584a99d6e4373f10c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &993477012
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993477010}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.008849263, y: -1.4601908}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4070833, y: 3.9203815}
+  m_EdgeRadius: 0
+--- !u!4 &993477013
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993477010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.529938, y: -0.8656752, z: 0.14620045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1243454952
 Prefab:
   m_ObjectHideFlags: 0
@@ -631,7 +714,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1795866730905862, guid: c21bf1a423a8f56439dcfeaf5d390c3d, type: 2}
       propertyPath: m_Name
-      value: Bob (2)
+      value: Bob
       objectReference: {fileID: 0}
     - target: {fileID: 114719777082722746, guid: c21bf1a423a8f56439dcfeaf5d390c3d,
         type: 2}
@@ -654,6 +737,11 @@ Prefab:
     - target: {fileID: 4590416743903976, guid: c21bf1a423a8f56439dcfeaf5d390c3d, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114430813896691492, guid: c21bf1a423a8f56439dcfeaf5d390c3d,
+        type: 2}
+      propertyPath: jumpEnabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c21bf1a423a8f56439dcfeaf5d390c3d, type: 2}
@@ -861,11 +949,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4581404365701748, guid: 06851d78e30f5f342a8a601116006604, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.081526
+      value: -6.07
       objectReference: {fileID: 0}
     - target: {fileID: 4581404365701748, guid: 06851d78e30f5f342a8a601116006604, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.08
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 4581404365701748, guid: 06851d78e30f5f342a8a601116006604, type: 2}
       propertyPath: m_LocalPosition.z
@@ -901,8 +989,13 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1858114721554792, guid: 06851d78e30f5f342a8a601116006604, type: 2}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114764554616466376, guid: 06851d78e30f5f342a8a601116006604, type: 2}
+    - {fileID: 114494042210500638, guid: 06851d78e30f5f342a8a601116006604, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 06851d78e30f5f342a8a601116006604, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1395368253
@@ -1095,9 +1188,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1669661565}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a85d074e178130b4695be3a9f93e5d10, type: 3}
+  m_Script: {fileID: 11500000, guid: 9950c80cab68fc942a92b658950a8a62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stairs: {fileID: 833244194}
+  doorOpen: {fileID: 21300000, guid: e0be747748052c84b88ccb0160bef5e1, type: 3}
+  doorClosed: {fileID: 21300000, guid: 591d51aecc39e004daef93d13def8a54, type: 3}
 --- !u!4 &1872995431 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4503071555848108, guid: 54932a61a14892a45af29e381faa73bd,

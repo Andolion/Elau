@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door_lvl3 : MonoBehaviour {
+public class Door_Lv3 : MonoBehaviour {
     public ChandelierControl chandelier;
     public Sprite doorOpen;
     public Sprite doorClosed;
