@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 50056973698041616}
   - component: {fileID: 114430813896691492}
   - component: {fileID: 114719777082722746}
+  - component: {fileID: 114922719720124686}
   m_Layer: 0
   m_Name: Bob
   m_TagString: Untagged
@@ -236,6 +237,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: BobCharacterControl+BoolEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114922719720124686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1795866730905862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336412dbe199c3342b0c925cbc05d5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212507986223588788
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -7,6 +7,9 @@ public class ClosetControl : MonoBehaviour {
     public Sprite closetClosed;
     public Sprite closetOpen;
     private SpriteRenderer spriteCloset;
+    public bool doorUnlock = false;
+    public GameObject player;
+    bool col = false;
 
     // Use this for initialization
     void Start() {
@@ -15,12 +18,24 @@ public class ClosetControl : MonoBehaviour {
             spriteCloset.sprite = closetClosed;
     }
 
-    // Update is called once per frame
-    void Update() {
+    private void Update()
+    {
+        if (player.transform.position.x <= -3 && player.transform.position.x >= -5)
+        {
+            if (player.transform.position.y <= 2.5 && player.transform.position.y >= 0)
+            {
+                col = true;
+            }
+            else
+            {
+                col = false;
+            }
+        }
 
-        if (Input.GetKeyDown(KeyCode.Space)) // If the space bar is pushed down + location of character TODO
+        if (Input.GetKeyDown(KeyCode.E) && col)
         {
             OpenCloset(); // call method to change sprite
+            doorUnlock = true;
         }
     }
 
