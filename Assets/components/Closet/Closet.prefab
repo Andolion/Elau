@@ -20,8 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4347575319177068}
   - component: {fileID: 212428042839045860}
+  - component: {fileID: 114762775416684506}
   - component: {fileID: 68910826539730650}
-  - component: {fileID: 251582861457265100}
+  - component: {fileID: 251643299771770316}
   m_Layer: 0
   m_Name: Closet
   m_TagString: Untagged
@@ -59,6 +60,19 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.9654951, y: 1.2716607}
   - {x: 0.98028183, y: 1.2716607}
+--- !u!114 &114762775416684506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854771079788864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcfc4a0456b5e2246b692a9a4541811e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closetClosed: {fileID: 0}
+  closetOpen: {fileID: 0}
 --- !u!212 &212428042839045860
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -104,7 +118,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!251 &251582861457265100
+--- !u!251 &251643299771770316
 PlatformEffector2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

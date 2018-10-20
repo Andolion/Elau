@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4444150766810244}
   - component: {fileID: 212939830911386224}
   - component: {fileID: 68893115883203792}
-  - component: {fileID: 251914254511869746}
+  - component: {fileID: 251900236346165138}
   m_Layer: 0
   m_Name: Fireplace
   m_TagString: Untagged
@@ -104,7 +104,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!251 &251914254511869746
+--- !u!251 &251900236346165138
 PlatformEffector2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

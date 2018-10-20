@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4842361399807478}
   - component: {fileID: 212792885965357624}
   - component: {fileID: 61974074901669462}
-  - component: {fileID: 251869820631868948}
+  - component: {fileID: 251071892205680438}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -112,7 +112,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!251 &251869820631868948
+--- !u!251 &251071892205680438
 PlatformEffector2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

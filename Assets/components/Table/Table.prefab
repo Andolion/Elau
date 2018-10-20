@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4611243601974310}
   - component: {fileID: 212682701763547150}
   - component: {fileID: 61438471147770862}
-  - component: {fileID: 251150468942243370}
+  - component: {fileID: 251233807107583550}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -112,7 +112,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!251 &251150468942243370
+--- !u!251 &251233807107583550
 PlatformEffector2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
