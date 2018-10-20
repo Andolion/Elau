@@ -4,29 +4,37 @@ using UnityEngine;
 
 public class ClockControl : MonoBehaviour
 {
-
+    public GameObject player;
     public Sprite clock3;
     public Sprite clock6;
     private SpriteRenderer spriteClock;
+    public bool doorUnlock;
 
     // Use this for initialization
     void Start()
     {
+        doorUnlock = false;
         spriteClock = GetComponent<SpriteRenderer>();
         if (spriteClock.sprite == null)
             spriteClock.sprite = clock3;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D collision) // TODO change on collision with platform on clock
     {
-
-        if (Input.GetKeyDown(KeyCode.Space)) // TODO change on collision with platform on clock
+        if(collision.gameObject == player)
         {
-            changeClock(); // call method to change sprite
+            StartCoroutine(clockingAlong());
         }
-    }
 
+    }
+    
+    IEnumerator clockingAlong()
+    {
+        changeClock(); // call method to change sprite
+        yield return new WaitForSeconds(5);
+        doorUnlock = true;
+    }
+    
     void changeClock()
     {
         if (spriteClock.sprite == clock3) // if the spriteRenderer sprite = sprite1 then change to sprite2
