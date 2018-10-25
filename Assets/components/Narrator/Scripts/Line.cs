@@ -24,4 +24,9 @@ public class Line
     {
         return _line;
     }
+
+    public float getLength()
+    {
+        return _audio.clip.length;
+    }
 }

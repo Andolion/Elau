@@ -23,12 +23,22 @@ public class NarratorTrigger : MonoBehaviour
 
     }
 
+    public float getLength()
+    {
+        return _line.getLength();
+    }
+
+    public void Play()
+    {
+        _line.play();
+        hasPlayed = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == player && !hasPlayed)
         {
-            _line.play();
-            hasPlayed = true;
+            this.Play();
         }
     }
 

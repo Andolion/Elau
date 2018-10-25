@@ -113,6 +113,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &86557672
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617476558490534, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 579d91370a098de49890f28e12cb1a7b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &133403719
 Prefab:
   m_ObjectHideFlags: 0
@@ -254,87 +296,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4887393322707360, guid: 782efcf5aaa5c1a43bfcbd07f5305655,
     type: 2}
   m_PrefabInternal: {fileID: 212402026}
---- !u!1 &476791337
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 476791341}
-  - component: {fileID: 476791340}
-  - component: {fileID: 476791339}
-  - component: {fileID: 476791338}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &476791338
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 476791337}
-  m_Enabled: 1
---- !u!124 &476791339
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 476791337}
-  m_Enabled: 1
---- !u!20 &476791340
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 476791337}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5.256274
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &476791341
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 476791337}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &520140975 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4924696093033056, guid: 0381e30440fdb964486169dfe30e974d,
@@ -565,8 +526,9 @@ GameObject:
   - component: {fileID: 993477013}
   - component: {fileID: 993477012}
   - component: {fileID: 993477011}
+  - component: {fileID: 993477014}
   m_Layer: 0
-  m_Name: Trigger To Next Level
+  m_Name: Pause Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -580,9 +542,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 993477010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e23e37c2d7a584a99d6e4373f10c81, type: 3}
+  m_Script: {fileID: 11500000, guid: a4fc274a6372c3a40ad42b60fc69eb2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1277181484}
+  canvas: {fileID: 1336018091}
+  narratorTrigger: {fileID: 993477014}
 --- !u!61 &993477012
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -592,7 +557,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.008849263, y: -1.4601908}
@@ -621,6 +586,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &993477014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993477010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b074e4937101845a8e6561c2e807c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  line: "Wait okay, what are you doing? You think you could do this without me?! You\u2019d
+    be walking in circles mate\u2026 You\u2019re probably thinking: WHO IS THIS GUY?
+    Hi, nice to meet you, I\u2019m your\u2026 Friend. And you are \u2026, wait I don\u2019t
+    like that name, I\u2019m going to call you Bob. I\u2019m going to have to restart
+    the level, you know? I mean, you fucked up already!"
 --- !u!1001 &1243454952
 Prefab:
   m_ObjectHideFlags: 0
@@ -746,6 +728,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c21bf1a423a8f56439dcfeaf5d390c3d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1277181484 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1795866730905862, guid: c21bf1a423a8f56439dcfeaf5d390c3d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1277181483}
 --- !u!1001 &1278749777
 Prefab:
   m_ObjectHideFlags: 0
@@ -940,6 +927,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83483352db1dc1c4faa04840fa9402e1, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1336018091 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1056724174305968, guid: 83483352db1dc1c4faa04840fa9402e1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1336018090}
 --- !u!1001 &1341811603
 Prefab:
   m_ObjectHideFlags: 0
