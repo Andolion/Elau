@@ -11,18 +11,19 @@ public class BobMovLv3 : MonoBehaviour
     public bool jumpEnabled = false;
     private bool jump = false;
 
+    void Start()
+    {
+        jumpEnabled = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+     
 
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            jumpEnabled = true;
-        }
-
-        if (Input.GetButtonDown("Jump") && jumpEnabled)
+        if (Input.GetKeyDown(KeyCode.J) && jumpEnabled)
         {
             jump = true;
         }
