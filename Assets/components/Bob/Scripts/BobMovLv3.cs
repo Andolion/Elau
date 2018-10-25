@@ -2,20 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BobMov_lvl2 : MonoBehaviour
+public class BobMovLv3 : MonoBehaviour
 {
 
     public BobCharacterControl control;
     float horizontalMove = 0;
     public float runSpeed = 40;
-    public bool jumpEnabled = true;
+    public bool jumpEnabled = false;
     private bool jump = false;
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -23,7 +17,12 @@ public class BobMov_lvl2 : MonoBehaviour
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        if (Input.GetKeyDown(KeyCode.J) && jumpEnabled)
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            jumpEnabled = true;
+        }
+
+        if (Input.GetButtonDown("Jump") && jumpEnabled)
         {
             jump = true;
         }

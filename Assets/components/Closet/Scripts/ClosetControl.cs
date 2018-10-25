@@ -20,16 +20,13 @@ public class ClosetControl : MonoBehaviour {
 
     private void Update()
     {
-        if (player.transform.position.x <= -3 && player.transform.position.x >= -5)
+        if (player.transform.position.x <= -3 && player.transform.position.x >= -5 && player.transform.position.y <= 2.5 && player.transform.position.y >= 0)
         {
-            if (player.transform.position.y <= 2.5 && player.transform.position.y >= 0)
-            {
-                col = true;
-            }
-            else
-            {
-                col = false;
-            }
+            col = true;
+        }
+        else
+        {
+            col = false;
         }
 
         if (Input.GetKeyDown(KeyCode.E) && col)

@@ -154,7 +154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1795866730905862, guid: c21bf1a423a8f56439dcfeaf5d390c3d, type: 2}
       propertyPath: m_Name
-      value: Bob (1)
+      value: Bob
       objectReference: {fileID: 0}
     - target: {fileID: 114719777082722746, guid: c21bf1a423a8f56439dcfeaf5d390c3d,
         type: 2}
@@ -258,7 +258,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1964353724595868, guid: af82685d9a0a446449629290c5ced966, type: 2}
       propertyPath: m_Name
-      value: Stairs (1)
+      value: Stairs
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af82685d9a0a446449629290c5ced966, type: 2}
@@ -309,7 +309,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1225449780805146, guid: e6ffb775fc60b6b459c5ee42212aa053, type: 2}
       propertyPath: m_Name
-      value: EventSystem (1)
+      value: EventSystem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6ffb775fc60b6b459c5ee42212aa053, type: 2}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 439768906}
   - component: {fileID: 439768905}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -447,19 +447,25 @@ Prefab:
     - target: {fileID: 212133183297699322, guid: 06851d78e30f5f342a8a601116006604,
         type: 2}
       propertyPath: m_SortingLayerID
-      value: -1908941623
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 212133183297699322, guid: 06851d78e30f5f342a8a601116006604,
         type: 2}
       propertyPath: m_SortingLayer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1858114721554792, guid: 06851d78e30f5f342a8a601116006604, type: 2}
       propertyPath: m_Name
-      value: Door (1)
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 61454181635937924, guid: 06851d78e30f5f342a8a601116006604,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114764554616466376, guid: 06851d78e30f5f342a8a601116006604, type: 2}
+    - {fileID: 114494042210500638, guid: 06851d78e30f5f342a8a601116006604, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 06851d78e30f5f342a8a601116006604, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &614260609
@@ -472,7 +478,7 @@ GameObject:
   - component: {fileID: 614260611}
   - component: {fileID: 614260610}
   m_Layer: 0
-  m_Name: Background (1)
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -510,8 +516,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1797402297
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a28367e7e29f49f48a37d738f374fbaf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -581,7 +587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1809756965412976, guid: 446e84c65cc470840aaffb773b49e495, type: 2}
       propertyPath: m_Name
-      value: Gun (1)
+      value: Gun
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 446e84c65cc470840aaffb773b49e495, type: 2}
@@ -637,7 +643,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1006240746224744, guid: 8086cba5ff4b2fb449b7d9f449b3ce75, type: 2}
       propertyPath: m_Name
-      value: Painting (1)
+      value: Painting
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8086cba5ff4b2fb449b7d9f449b3ce75, type: 2}
@@ -720,7 +726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorUnlock: 0
-  onChandelier: 0
 --- !u!61 &763724390
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -787,7 +792,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1194937427688054, guid: f24d1357bd266a14a82ad4a39426057c, type: 2}
       propertyPath: m_Name
-      value: Bed (1)
+      value: Bed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f24d1357bd266a14a82ad4a39426057c, type: 2}
@@ -843,7 +848,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1116035200407398, guid: 507d5c1d917e66e4c87b37ffc8fc29d6, type: 2}
       propertyPath: m_Name
-      value: Chandelier (1)
+      value: Chandelier
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 507d5c1d917e66e4c87b37ffc8fc29d6, type: 2}
@@ -947,7 +952,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1056724174305968, guid: 83483352db1dc1c4faa04840fa9402e1, type: 2}
       propertyPath: m_Name
-      value: Canvas (1)
+      value: Canvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83483352db1dc1c4faa04840fa9402e1, type: 2}
@@ -1008,7 +1013,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1751682912455474, guid: 7276abc292ed36549ba0cc8f45f9a71f, type: 2}
       propertyPath: m_Name
-      value: Table (1)
+      value: Table
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7276abc292ed36549ba0cc8f45f9a71f, type: 2}
@@ -1138,7 +1143,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1863322705601698, guid: df8f24a9b609ebd4d81ebf818ed072c3, type: 2}
       propertyPath: m_Name
-      value: Fireplace (1)
+      value: Fireplace
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df8f24a9b609ebd4d81ebf818ed072c3, type: 2}
@@ -1194,7 +1199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1854771079788864, guid: 4664f35a59e1d6049a34f36e36b75951, type: 2}
       propertyPath: m_Name
-      value: Closet (1)
+      value: Closet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4664f35a59e1d6049a34f36e36b75951, type: 2}
@@ -1259,7 +1264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   control: {fileID: 2090022352}
   runSpeed: 50
-  jumpEnabled: 1
+  jumpEnabled: 0
 --- !u!114 &2090022352 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114719777082722746, guid: c21bf1a423a8f56439dcfeaf5d390c3d,
