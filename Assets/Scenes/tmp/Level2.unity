@@ -598,11 +598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  line: "Wait okay, what are you doing? You think you could do this without me?! You\u2019d
-    be walking in circles mate\u2026 You\u2019re probably thinking: WHO IS THIS GUY?
-    Hi, nice to meet you, I\u2019m your\u2026 Friend. And you are \u2026, wait I don\u2019t
-    like that name, I\u2019m going to call you Bob. I\u2019m going to have to restart
-    the level, you know? I mean, you fucked up already!"
+  audioClip: {fileID: 8300000, guid: 2bacfa6d226f1a0479ff16385d76b328, type: 3}
 --- !u!1001 &1243454952
 Prefab:
   m_ObjectHideFlags: 0

@@ -6,31 +6,29 @@ public class NarratorTrigger : MonoBehaviour
 {
 
     public GameObject player;
-    public string line;
+    public AudioClip audioClip;
     private Line _line;
     private bool hasPlayed = false;
 
     // Use this for initialization
     void Start()
     {
-        _line = new Line(line);
-        StartCoroutine(DownloadTextToSpeech(_line));
+        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = audioClip;
+        _line = new Line(audioSource);
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() { }
 
-    }
-
-    public float getLength()
+    public float GetLength()
     {
-        return _line.getLength();
+        return _line.GetLength();
     }
 
     public void Play()
     {
-        _line.play();
+        _line.Play();
         hasPlayed = true;
     }
 
@@ -42,6 +40,7 @@ public class NarratorTrigger : MonoBehaviour
         }
     }
 
+    /*
     IEnumerator DownloadTextToSpeech(Line line)
     {
         string url = this._getUrl(line.getString());
@@ -67,4 +66,6 @@ public class NarratorTrigger : MonoBehaviour
     {
         return "http://api.voicerss.org/?key=d37faacd338249fb903865d830cdb09e&hl=en-us&c=OGG&src=" + UnityWebRequest.EscapeURL(text);
     }
+
+    */
 }

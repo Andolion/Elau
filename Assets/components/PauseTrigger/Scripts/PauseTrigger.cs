@@ -32,8 +32,8 @@ public class PauseTrigger : MonoBehaviour {
         GamePause gamePause = canvas.GetComponent<GamePause>();
         gamePause.Pause();
         narratorTrigger.Play();
-        Debug.Log(narratorTrigger.getLength());
-        yield return new WaitForSecondsRealtime(narratorTrigger.getLength());
+        Debug.Log(narratorTrigger.GetLength());
+        yield return new WaitForSecondsRealtime(narratorTrigger.GetLength());
         gamePause.Resume();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
