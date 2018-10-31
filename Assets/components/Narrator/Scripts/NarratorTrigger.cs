@@ -18,9 +18,6 @@ public class NarratorTrigger : MonoBehaviour
         _line = new Line(audioSource);
     }
 
-    // Update is called once per frame
-    void Update() { }
-
     public float GetLength()
     {
         return _line.GetLength();
