@@ -215,7 +215,7 @@ Prefab:
     - target: {fileID: 61454181635937924, guid: 06851d78e30f5f342a8a601116006604,
         type: 2}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 61454181635937924, guid: 06851d78e30f5f342a8a601116006604,
         type: 2}
@@ -253,6 +253,16 @@ Prefab:
     - target: {fileID: 212133183297699322, guid: 06851d78e30f5f342a8a601116006604,
         type: 2}
       propertyPath: m_Size.y
+      value: 2.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 61454181635937924, guid: 06851d78e30f5f342a8a601116006604,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 61454181635937924, guid: 06851d78e30f5f342a8a601116006604,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.newSize.y
       value: 2.37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1009,8 +1019,7 @@ MonoBehaviour:
   control: {fileID: 1594292479}
   runSpeed: 50
   clipLv5: {fileID: 1594292478}
-  clip1Lv3: {fileID: 0}
-  clip2Lv3: {fileID: 0}
+  clipLv3: {fileID: 0}
 --- !u!114 &1594292478
 MonoBehaviour:
   m_ObjectHideFlags: 0

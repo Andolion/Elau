@@ -18,9 +18,8 @@ public class BobMovement : MonoBehaviour {
     int triggerLv5 = 1;
 
     //used for level 3 only
-    public NarratorTrigger clip1Lv3;
-    public NarratorTrigger clip2Lv3;
-    int triggerLv3 = 2;
+    public NarratorTrigger clipLv3;
+    int triggerLv3 = 1;
 
     private void Start()
     {
@@ -41,6 +40,7 @@ public class BobMovement : MonoBehaviour {
                 if (triggerLv5 == 1)
                 {
                     clipLv5.Play();
+                    triggerLv5--;
                 }
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
@@ -49,6 +49,7 @@ public class BobMovement : MonoBehaviour {
                 if (triggerLv5 == 1)
                 {
                     clipLv5.Play();
+                    triggerLv5--;
                 }
             }
             else
@@ -62,21 +63,15 @@ public class BobMovement : MonoBehaviour {
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         }
 
-        if (level == 3 && Input.GetKeyDown(KeyCode.Space) && triggerLv3 == 2)
+        if (level == 3 && Input.GetKeyDown(KeyCode.Space) && triggerLv3 == 1)
         {
-            clip1Lv3.Play();
+            clipLv3.Play();
             triggerLv3--;
         }
 
         if (Input.GetButtonDown("Jump") && jumpEnabled)
         {
             jump = true;
-            
-            if(level == 3 && triggerLv3 == 1)
-            {
-                clip2Lv3.Play();
-                triggerLv3--;
-            }
         }
     }
 

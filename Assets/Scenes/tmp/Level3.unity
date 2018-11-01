@@ -113,6 +113,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2290001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2290004}
+  - component: {fileID: 2290003}
+  - component: {fileID: 2290002}
+  m_Layer: 0
+  m_Name: EndTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2290002
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2290001}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.30109394}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.7539828}
+  m_EdgeRadius: 0
+--- !u!114 &2290003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2290001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b074e4937101845a8e6561c2e807c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 2090022350}
+  audioClip: {fileID: 8300000, guid: cae8641bf592ea445958fd402b9aaabe, type: 3}
+--- !u!4 &2290004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2290001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.41, y: -3.17, z: 0.14620045}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &97098166
 Prefab:
   m_ObjectHideFlags: 0
@@ -631,7 +699,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 684304782}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.69, y: 1.51, z: 0.14620045}
+  m_LocalPosition: {x: -6.14, y: 1.41, z: 0.14620045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1297,27 +1365,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   control: {fileID: 2090022352}
   runSpeed: 50
-  clip1Lv3: {fileID: 2090022354}
-  clip2Lv3: {fileID: 2090022353}
+  clipLv5: {fileID: 0}
+  clipLv3: {fileID: 2090022354}
 --- !u!114 &2090022352 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114719777082722746, guid: c21bf1a423a8f56439dcfeaf5d390c3d,
     type: 2}
   m_PrefabInternal: {fileID: 97098166}
   m_Script: {fileID: 11500000, guid: 484acfd5f1169184c84e6f93eaafb3be, type: 3}
---- !u!114 &2090022353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2090022350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27b074e4937101845a8e6561c2e807c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: cae8641bf592ea445958fd402b9aaabe, type: 3}
 --- !u!114 &2090022354
 MonoBehaviour:
   m_ObjectHideFlags: 0

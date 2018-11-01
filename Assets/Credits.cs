@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour {
     public NarratorTrigger end;
@@ -13,7 +14,6 @@ public class Credits : MonoBehaviour {
         {
             StartCoroutine(ThisIsTheEnd());
             trigger--;
-            Application.Quit();
         }
     }
 
@@ -21,5 +21,6 @@ public class Credits : MonoBehaviour {
     {
         end.Play();
         yield return new WaitForSeconds(end.GetLength());
+        SceneManager.LoadScene("Menu");
     }
 }

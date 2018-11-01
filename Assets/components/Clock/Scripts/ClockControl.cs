@@ -11,6 +11,7 @@ public class ClockControl : MonoBehaviour
     private SpriteRenderer spriteClock;
     public Door_Default door;
     public NarratorTrigger narrator;
+    int trigger = 1;
 
     // Use this for initialization
     void Start()
@@ -22,8 +23,9 @@ public class ClockControl : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (door.level == 4)
+        if (door.level == 4 && trigger == 1)
         {
+            trigger--;
             StartCoroutine(clockingAlong());
         }
     }
