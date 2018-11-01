@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212428042839045860}
   - component: {fileID: 68910826539730650}
   - component: {fileID: 251643299771770316}
+  - component: {fileID: 114245225916416734}
   m_Layer: 0
   m_Name: Closet
   m_TagString: Untagged
@@ -59,6 +60,21 @@ EdgeCollider2D:
   m_Points:
   - {x: -0.9654951, y: 1.2716607}
   - {x: 0.98028183, y: 1.2716607}
+--- !u!114 &114245225916416734
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854771079788864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcfc4a0456b5e2246b692a9a4541811e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  closetClosed: {fileID: 21300000, guid: 34f53695e8cd39b489a8f3b1fbf51e7d, type: 3}
+  closetOpen: {fileID: 21300000, guid: 8894dff45fbe3d44b97d12834e4a396b, type: 3}
+  player: {fileID: 1795866730905862, guid: c21bf1a423a8f56439dcfeaf5d390c3d, type: 2}
+  door: {fileID: 114494042210500638, guid: 06851d78e30f5f342a8a601116006604, type: 2}
 --- !u!212 &212428042839045860
 SpriteRenderer:
   m_ObjectHideFlags: 1

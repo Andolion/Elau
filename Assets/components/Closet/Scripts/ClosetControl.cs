@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClosetControl : MonoBehaviour {
 
     public Sprite closetClosed;
     public Sprite closetOpen;
     private SpriteRenderer spriteCloset;
-    public bool doorUnlock = false;
     public GameObject player;
     bool col = false;
+    public Door_Default door;
+    public NarratorTrigger narrator;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         spriteCloset = GetComponent<SpriteRenderer>();
         if (spriteCloset.sprite == null)
             spriteCloset.sprite = closetClosed;
@@ -29,10 +32,11 @@ public class ClosetControl : MonoBehaviour {
             col = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && col)
+        if (Input.GetKeyDown(KeyCode.E) && col && door.level == 6)
         {
             OpenCloset(); // call method to change sprite
-            doorUnlock = true;
+            narrator.Play();
+            door.doorUnlock = true;
         }
     }
 

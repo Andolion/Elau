@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 68364512640027316}
   - component: {fileID: 68903610154273008}
   - component: {fileID: 251343598557950032}
+  - component: {fileID: 114057279332396700}
   m_Layer: 0
   m_Name: Stairs
   m_TagString: Untagged
@@ -149,6 +150,18 @@ EdgeCollider2D:
   - {x: 0.34031296, y: -1.8746512}
   - {x: 0.3758011, y: -0.9544344}
   - {x: -0.27435017, y: -0.9544345}
+--- !u!114 &114057279332396700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964353724595868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8ba07637425a8c4782179ea1047ec6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 114494042210500638, guid: 06851d78e30f5f342a8a601116006604, type: 2}
 --- !u!212 &212956239739617344
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212788036982813446}
   - component: {fileID: 68450968605304316}
   - component: {fileID: 251868509977666730}
+  - component: {fileID: 114817970027032574}
   m_Layer: 0
   m_Name: Chandelier
   m_TagString: Untagged
@@ -64,6 +65,18 @@ EdgeCollider2D:
   - {x: 0.72667456, y: -0.9148468}
   - {x: 0.905797, y: -0.71544147}
   - {x: 1.4412794, y: -0.70976377}
+--- !u!114 &114817970027032574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1116035200407398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c64808ff5137c9044a583750e5b0468a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 114494042210500638, guid: 06851d78e30f5f342a8a601116006604, type: 2}
 --- !u!212 &212788036982813446
 SpriteRenderer:
   m_ObjectHideFlags: 1

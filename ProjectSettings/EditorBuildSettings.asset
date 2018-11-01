@@ -12,21 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Naming.unity
     guid: caa0982124eff224f85d53ed88352484
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/tmp/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/tmp/Level2.unity
     guid: 81aecf16b49bdfd41822ea4783058fe6
   - enabled: 1
-    path: Assets/Scenes/Level3.unity
+    path: Assets/Scenes/tmp/Level3.unity
     guid: 8fd6c1c4cf49b9e4389eeb8bea1b9a09
   - enabled: 1
-    path: Assets/Scenes/Level4.unity
-    guid: 5966c088b9ffe8849baf1341687ff3a7
+    path: Assets/Scenes/tmp/Level4.unity
+    guid: 8a918379bb8084646b6e078599709bfa
   - enabled: 1
-    path: Assets/Scenes/Level5.unity
-    guid: 108e8a0503c612e40abdcaff02328d09
+    path: Assets/Scenes/tmp/Level5.unity
+    guid: fe2c3e00e48f2a941a2e2a1be064944f
   - enabled: 1
-    path: Assets/Scenes/Level6.unity
-    guid: ecbd5f879b045384c9be1b1aef259c4f
+    path: Assets/Scenes/tmp/Level6.unity
+    guid: f428f3573a80a39419084b62e422815b
+  - enabled: 1
+    path: Assets/Scenes/tmp/Credits.unity
+    guid: e479fcbf7dd0e8147a5d1e62f780f8dd
   m_configObjects: {}

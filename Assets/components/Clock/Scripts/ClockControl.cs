@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClockControl : MonoBehaviour
 {
@@ -8,31 +9,33 @@ public class ClockControl : MonoBehaviour
     public Sprite clock3;
     public Sprite clock6;
     private SpriteRenderer spriteClock;
-    public bool doorUnlock;
+    public Door_Default door;
+    public NarratorTrigger narrator;
+    int trigger = 1;
 
     // Use this for initialization
     void Start()
     {
-        doorUnlock = false;
         spriteClock = GetComponent<SpriteRenderer>();
         if (spriteClock.sprite == null)
             spriteClock.sprite = clock3;
     }
 
-    void OnTriggerEnter2D(Collider2D collision) // TODO change on collision with platform on clock
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject == player)
+        if (door.level == 4 && trigger == 1)
         {
+            trigger--;
             StartCoroutine(clockingAlong());
         }
-
     }
-    
+
     IEnumerator clockingAlong()
     {
         changeClock(); // call method to change sprite
-        yield return new WaitForSeconds(5);
-        doorUnlock = true;
+        narrator.Play();
+        yield return new WaitForSeconds(narrator.GetLength());
+        door.doorUnlock = true;
     }
     
     void changeClock()
